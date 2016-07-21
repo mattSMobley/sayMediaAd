@@ -59,8 +59,8 @@ var makeBSS = function (el, options) {
                 spanNext.classList.add('bss-next');
 
                 // add contents
-                spanPrev.innerHTML = '<img class="img-responsive arrowPrev" src="../media/arrow-left.png">';
-                spanNext.innerHTML = '<img class="img-responsive arrowNext" src="../media/arrow-right.png">';
+                spanPrev.innerHTML = '<img class="img-responsive arrowPrev" src="./media/arrow-left.png">';
+                spanNext.innerHTML = '<img class="img-responsive arrowNext" src="./media/arrow-right.png">';
 
                 // append elements to fragment, then append fragment to DOM
                 docFrag.appendChild(spanPrev);
