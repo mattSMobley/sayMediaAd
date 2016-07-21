@@ -14,17 +14,20 @@
 
   <body>
     <div class="container">
+      <!-- VIDEO OVERLAY AREA -->
       <div class="videoOverlay">
         <div class="row">
           <button class="img-responsive exitVideoButton"> <i class="fa fa-times" aria-hidden="true"></i></button>
           <center>
-          <video controls>
-            <source src="./media/TKO_video.mp4" type="video/mp4">
-              Your browser does not support the video tag!
-          </video>
-        </center>
+            <video controls>
+              <source src="./media/TKO_video.mp4" type="video/mp4"> Your browser does not support the video tag!
+            </video>
+          </center>
         </div>
       </div>
+      <!-- /VIDEO OVERLAY AREA -->
+
+      <!-- TITLE AREA -->
       <div class="col-md-12">
         <header>
           <div class="row">
@@ -34,17 +37,23 @@
             <img class="img-responsive findAdventure animated fadeInDown" src="./media/title.png">
           </div>
         </header>
-          <div class="row subText">
-            <center>
-              <img class="img-responsive" src="./media/subText.png">
-            </center>
-          </div>
-          <!-- ANIMATIONS -->
-          <div class="circle one"></div>
-          <div class="circle two"></div>
-          <div class="circle three"></div>
-          <!-- /ANIMATIONS -->
+        <!-- /TITLE AREA -->
 
+        <!-- SUBTITLE AREA -->
+        <div class="row subText">
+          <center>
+            <img class="img-responsive" src="./media/subText.png">
+          </center>
+        </div>
+        <!-- /SUBTITLE AREA -->
+
+        <!-- BACKGROUND ANIMATIONS -->
+        <div class="circle one"></div>
+        <div class="circle two"></div>
+        <div class="circle three"></div>
+        <!-- /BACKGROUND ANIMATIONS -->
+
+        <!-- PHOTO GALLERY -->
         <center>
           <div class="bss-slides">
             <figure>
@@ -98,32 +107,40 @@
               </figcaption>
             </figure>
         </center>
+        </div>
+        <!-- /PHOTO GALLERY -->
+
+        <!-- VIDEO and BOOK BUTTONS -->
+        <center>
+          <div class="buttons">
+            <img id="viewVideoButton" class="img-responsive buttonImg fLeft animated fadeInUp" src="./media/viewVideoButton.png">
+            <img id="bookYourStayButton" class="img-responsive buttonImg fRight animated fadeInUp" src="./media/CTA_clickout.png">
+          </div>
+        </center>
+        <!-- /VIDEO and BOOK BUTTONS -->
+
+        <center>
+          <img class="img-responsive logo" src="./media/logo.png">
+        </center>
+
       </div>
-          <center>
-            <div class="buttons">
-              <img id="viewVideoButton" class="img-responsive buttonImg fLeft animated fadeInUp" src="./media/viewVideoButton.png">
-              <img id="bookYourStayButton" class="img-responsive buttonImg fRight animated fadeInUp" src="./media/CTA_clickout.png">
-            </div>
-          </center>
-          <center>
-            <img class="img-responsive logo" src="./media/logo.png">
-          </center>
-        <!-- </div> -->
-      </div>
+      <!-- /END CONTAINER -->
+
       <script src="./js/app.js"></script>
+      <script src="./js/hammer.js"></script>
       <script src="./js/better-simple-slideshow.js"></script>
       <script>
         var opts = {
-          //auto-advancing slides? accepts boolean (true/false) or object
+          //auto-advancing slides: accepts boolean (true/false) or object
           auto: {
-            // speed to advance slides at. accepts number of milliseconds
+            // speed to advance slides: accepts number of milliseconds
             speed: 5500,
-            // pause advancing on mouseover? accepts boolean
+            // pause advancing on mouseover: accepts boolean
             pauseOnHover: true
           },
-          // show fullscreen toggle? accepts boolean
+          // show fullscreen toggle: accepts boolean
           fullScreen: false,
-          // support swiping on touch devices? accepts boolean, requires hammer.js
+          // support swiping on touch devices: accepts boolean, requires hammer.js
           swipe: true
         };
         makeBSS('.bss-slides', opts);
