@@ -17,9 +17,9 @@
   position: relative;
 }
 .bss-slides figure img{
-  opacity: 0;
-  -webkit-transition: opacity 1.2s;
-  transition: opacity 1.2s;
+  opacity: .5;
+  -webkit-transition: opacity 2.2s;
+  transition: opacity 2.2s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
