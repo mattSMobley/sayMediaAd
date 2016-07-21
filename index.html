@@ -1,17 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Advertisement</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advertisement</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/simple-slideshow-styles.css" </head>
+
   <body>
+    <div class="container">
+      <div class="videoOverlay">
+        <div class="row">
+          <a href="/#" class="img-responsive exitVideoButton"> <i class="fa fa-times" aria-hidden="true"></i></a>
+          <center>
+          <video controls>
+            <source src="./media/TKO_video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+        </center>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <header>
+          <div class="row">
+            <a href="/#" class="img-responsive exitButton"> <i class="fa fa-times" aria-hidden="true"></i></a>
+          </div>
+          <div class="row">
+            <img class="img-responsive findAdventure" src="./media/title.png">
+          </div>
+        </header>
+          <div class="row subText">
+            <center>
+              <img class="img-responsive" src="./media/subText.png">
+            </center>
+          </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <center>
+          <div class="bss-slides">
+            <figure>
+              <img src="./media/TKO_galleryImg1.jpg" class="galleryImg" />
+              <figcaption>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./media/TKO_galleryImg2.jpg" class="galleryImg" />
+              <figcaption>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./media/TKO_galleryImg3.jpg" class="galleryImg" />
+              <figcaption>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./media/TKO_galleryImg4.jpg" class="galleryImg" />
+              <figcaption>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="./media/TKO_galleryImg5.jpg" class="galleryImg" />
+              <figcaption>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle-o" aria-hidden="true"></i>
+                <i class="fa fa-circle" aria-hidden="true"></i>
+              </figcaption>
+            </figure>
+        </center>
+      </div>
+          <center>
+            <div class="buttons">
+              <img id="viewVideoButton" class="img-responsive buttonImg fLeft" src="./media/viewVideoButton.png">
+              <img id="bookYourStayButton" class="img-responsive buttonImg fRight" src="./media/CTA_clickout.png">
+            </div>
+          </center>
+          <center>
+            <img class="img-responsive logo" src="./media/logo.png">
+          </center>
+        <!-- </div> -->
+      </div>
+      <script src="./js/app.js"></script>
+      <script src="./js/better-simple-slideshow.js"></script>
+      <script>
+        var opts = {
+          //auto-advancing slides? accepts boolean (true/false) or object
+          auto: {
+            // speed to advance slides at. accepts number of milliseconds
+            speed: 4500,
+            // pause advancing on mouseover? accepts boolean
+            pauseOnHover: true
+          },
+          // show fullscreen toggle? accepts boolean
+          fullScreen: false,
+          // support swiping on touch devices? accepts boolean, requires hammer.js
+          swipe: true
+        };
+        makeBSS('.bss-slides', opts);
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
+
 </html>
